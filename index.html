@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge - Desafio 1 - Logica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css"> 
+</head>
+<body class="letra">
+
+    <main>
+        <section class="secciontexto">
+            <img class="logoprincipal" src="src/Logo.png" alt="Logo Alura">
+            <textarea class="areatexto" name="areatexto" cols="40" rows="12" placeholder="Ingrese el texto aquí" onkeypress="return soloLetras(event)" style="text-transform:lowercase;" onkeyup="javascript:this.value=this.value.toLowerCase();"></textarea>
+            <p class="advertencia">&#10060; Sólo letras minúsculas, sin caracteres especiales y sin numeros</p>
+            <div class="secciontextobotones">
+              <input class="botonencriptar"type="button" value="Encriptar">
+              <input class="botondesencriptar"type="button" value="Desencriptar">
+            </div>
+          </section>
+        
+          
+
+          <section class="seccionencriptado">
+            <textarea class="areaencriptado" name="areaencriptar" cols="30" rows="18"></textarea>
+            <img class="imgbuscando" id="imgbuscando" src="src/pngegg.png" alt="Esperando mensaje">
+            <img  class="imgflores1" src="src/flores.png" alt="">
+            <img  class="imgflores2" src="src/flores.png" alt="">
+            <img  class="imgflores3" src="src/flores.png" alt="">
+            <img  class="imgflores4" src="src/flores.png" alt="">
+            <p class="msgnohaytexto" id="msgnohaytexto"><strong>Ningún mensaje fue encontrado<br><br></strong> Ingresa el texto que desees encriptar o desencriptar</p>
+            <div class="divbotoncopiar">
+              <input class="botoncopiar" type="button" value="Copiar">
+            </div>
+          </section>      
+    </main>
+
+   
+   
+    
+</body>
+</html>
+
+<script src="script.js"></script>
+
+
+
