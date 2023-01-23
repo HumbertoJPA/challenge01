@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge - Desafio 1 - Logica</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="src/Icono pestaña.png" />
-    <title>Encriptador Alura &#128274; </title>
-  </head>
+    <link rel="stylesheet" href="reset.css"> 
+</head>
+<body class="letra">
 
-  <body>
     <main>
-      
-      <section class="secciontexto">
-        <img class="logoprincipal" src="src/Alura Logo.png" alt="Logo Alura">
-        <textarea class="areatexto" name="areatexto" cols="40" rows="12" placeholder="Ingrese el texto aquí"></textarea>
-        <p class="advertencia">&#9888; Sólo letras minúsculas y sin acentos</p>
-        <div class="secciontextobotones">
-          <input class="botonencriptar"type="button" value="&#128274; ENCRIPTAR">
-          <input class="botondesencriptar"type="button" value="&#128275; DESENCRIPTAR">
-        </div>
-      </section>
-      
-      <aside class="seccionencriptado">
-        <textarea class="areaencriptado" name="areaencriptar" cols="30" rows="18"></textarea>
-        <img class="imgbuscando" id="imgbuscando" src="src/Roshi.png" alt="Esperando mensaje">
-        <p class="msgnohaytexto" id="msgnohaytexto"><strong>Ningún mensaje fue encontrado<br><br></strong> Ingresa el texto que desees encriptar o desencriptar</p>
-        <div class="divbotoncopiar">
-          <input class="botoncopiar" type="button" value="&#9997; COPiar">
-        </div>
-      </aside>
-      
-    </main>
-  </body>
+        <section class="secciontexto">
+            <img class="logoprincipal" src="Imagenes/Logo.png" alt="Logo Alura">
+            <textarea class="areatexto" name="areatexto" cols="40" rows="12" placeholder="Ingrese el texto aquí" onkeypress="return soloLetras(event)" style="text-transform:lowercase;" onkeyup="javascript:this.value=this.value.toLowerCase();"></textarea>
+            <p class="advertencia">&#10060; Sólo letras minúsculas, sin caracteres especiales y sin numeros</p>
+            <div class="secciontextobotones">
+              <input class="botonencriptar"type="button" value="Encriptar">
+              <input class="botondesencriptar"type="button" value="Desencriptar">
+            </div>
+          </section>
+        
+          
 
+          <section class="seccionencriptado">
+            <textarea class="areaencriptado" name="areaencriptar" cols="30" rows="18"></textarea>
+            <img class="imgbuscando" id="imgbuscando" src="Imagenes/pngegg.png" alt="Esperando mensaje">
+            <img  class="imgflores1" src="Imagenes/flores.png" alt="">
+            <img  class="imgflores2" src="Imagenes/flores.png" alt="">
+            <img  class="imgflores3" src="Imagenes/flores.png" alt="">
+            <img  class="imgflores4" src="Imagenes/flores.png" alt="">
+            <p class="msgnohaytexto" id="msgnohaytexto"><strong>Ningún mensaje fue encontrado<br><br></strong> Ingresa el texto que desees encriptar o desencriptar</p>
+            <div class="divbotoncopiar">
+              <input class="botoncopiar" type="button" value="Copiar">
+            </div>
+          </section>      
+    </main>
+
+   
+   
+    
+</body>
 </html>
 
 <script src="script.js"></script>
+
+
+
